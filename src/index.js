@@ -35,11 +35,11 @@ app.get('/',(req,res)=>{
     // res.render("login")
     res.render("login")
 })
-app.get('/login',(req,res)=>{
-    res.render("login")
-    // res.render("index")
+app.get('/index',(req,res)=>{
+    // res.render("login")
+    res.render("index")
 })
-app.post('/', async(req, res) => {
+app.post('/index', async(req, res) => {
     try {
         // res.send(req.body);
         const reservData = new Reserv(req.body);
@@ -49,6 +49,7 @@ app.post('/', async(req, res) => {
         res.status(500).send(err);
     }
 })
+
 
 
 
@@ -106,6 +107,8 @@ app.post('/register', async(req, res) => {
 
 
 // 
+
+
 
 
 // Mongoose Setup
