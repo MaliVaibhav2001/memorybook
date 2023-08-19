@@ -887,7 +887,7 @@ body {
     font-family: "Sacramento", serif;
     margin-top: 600px;
     margin-right: 80px;
-    color: #000;
+    float: right;
   }
   .name1 {
     text-align: right;
